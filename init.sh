@@ -1,8 +1,8 @@
 #!/bin/sh
 
-pkg update && pkg upgrade
+pkg update -y && pkg upgrade -y
 
-pkg install vim bash zsh git wget curl openrc netcat
+pkg install vim bash zsh git wget curl openrc netcat -y
 echo 'alias vi="vim"' >> ~/.zshrc 
 printf "syntax on\nset nu\nset mouse=a" >> ~/.vimrc
 
